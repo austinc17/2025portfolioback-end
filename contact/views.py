@@ -11,6 +11,8 @@ from .models import ContactMessage
 
 class ContactSubmitView(APIView):
     def post(self, request):
+        print(request.data)
+
         serializer = ContactSerializer(data=request.data)
         if serializer.is_valid():
             contact = serializer.save()
@@ -25,4 +27,8 @@ class ContactSubmitView(APIView):
             )
 
             return Response({'message': 'Success'}, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        print("Serializer errors:", serializer.errors) 
+        return Response({"received": request.data, "errors": serializer.errors}, status=400)
+
+    
+    
