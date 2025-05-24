@@ -138,6 +138,6 @@ CORS_ALLOWED_ORIGINS = [
     'https://2025portfoliofront-end.vercel.app',
     
 
-CORS_ALLOW_HEADERS = ['*']
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS == ['*']
+CORS_ALLOW_CREDENTIALS == True
 ]
