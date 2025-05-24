@@ -162,3 +162,8 @@ CORS_ALLOW_METHODS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+ALLOWED_HOSTS = [
+    'two025portfolioback-end.onrender.com',
+    '2025portfoliofront-end.vercel.app',
+]
