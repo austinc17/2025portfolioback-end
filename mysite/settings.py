@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 
 from pathlib import Path
 
@@ -37,9 +40,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
+    
     'contact',
     'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -140,6 +144,13 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_HEADERS = [
     "*"
+    'content-type',
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'OPTIONS',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
