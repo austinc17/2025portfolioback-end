@@ -143,9 +143,17 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_HEADERS = [
-    "*"
     'content-type',
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
 ]
+
 
 CORS_ALLOW_METHODS = [
     'GET',
