@@ -134,5 +134,5 @@ EMAIL_HOST_USER = 'austinchiwambo081@gmail.com'
 EMAIL_HOST_PASSWORD = 'tgrk lydt jgcg ztry'  
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  
+    'https://2025portfoliofront-end.vercel.app/',  
 ]
