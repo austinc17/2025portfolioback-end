@@ -11,6 +11,7 @@ from .models import ContactMessage
 
 class ContactSubmitView(APIView):
     def post(self, request):
+        print("=== POST HIT ===") 
         print(request.data)
 
         serializer = ContactSerializer(data=request.data)
